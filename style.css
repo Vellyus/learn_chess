@@ -1,0 +1,288 @@
+/* GLOBAL RULES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  color: #FDF6EA;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  background-color: #FDF6EA;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FDF6EA;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+a:hover {
+  color: #fa26a0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+/* REUSABLE COMPONENTS */
+.btn {
+  display: inline-block;
+  padding: .5rem 3rem;
+  background: #fa26a0;
+  color: #1E3A66;
+  border-radius: 1.5rem;
+}
+
+.btn:hover {
+  transition: .4s ease-in-out;
+  background-color: #c81e80;
+  color: #FDF6EA;
+  transform: scale(1.03);
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav-list {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, .7);
+  padding: 1rem 2rem;
+}
+
+.nav-list-item {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  /* background: linear-gradient(rgba(40, 40, 40, .5) 0%, rgba(0, 0, 0, .8) 100%), url("img/bg1.jpg") center no-repeat; */
+  background: linear-gradient(135deg, rgba(40, 68, 112, .5) 0%, rgba(30, 58, 102, .5) 100%), url("img/bg1.jpg") center no-repeat;
+
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+}
+
+.flex-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.join-btn {
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+.logo {
+  width: 12rem;
+  position: absolute;
+  bottom: 16rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1E3A66;
+  border: 4px solid #FDF6EA;
+  border-radius: 50%;
+}
+
+/* ABOUT */
+
+#about {
+  color: #1E3A66;
+}
+
+.about-grid {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+}
+
+.about-grid-item {
+  /* background: linear-gradient(rgba(40, 40, 40, .8) 0%, rgba(0, 0, 0, .8) 100%); */
+  background: linear-gradient(135deg, rgba(40, 68, 112, .9) 0%, rgba(30, 58, 102, .9) 100%);
+  height: 25rem;
+  border-radius: 1.5rem;
+  color: #FDF6EA;
+  -webkit-box-reflect: below 0.1em -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.15)));
+}
+
+.about-grid-item:hover {
+  background: #fa26a0;
+  color: #1E3A66;
+  cursor: pointer;
+}
+
+.about-grid-item h4 {
+  margin-top: 6rem;
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+
+.about-grid-item p {
+  display: inline-block;
+  margin-top: 4rem;
+  font-size: 1.6rem;
+  padding: 0 2rem;
+  max-width: 20rem;
+}
+
+/* SETS */
+
+#sets {
+  /* height: 100vh; */
+  /* background: linear-gradient(rgba(40, 40, 40, .5) 0%, rgba(0, 0, 0, .8) 100%), url("img/bg2.jpg") center no-repeat; */
+  background: linear-gradient(135deg, rgba(40, 68, 112, .5) 0%, rgba(30, 58, 102, .5) 100%), url("img/bg2.jpg") center no-repeat;
+
+  background-size: cover;
+  background-position-y: top;
+  clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 100%);
+  padding-bottom: -5rem;
+}
+
+.sets-title {
+  margin-top: 8rem;
+}
+
+.sets-btn {
+  margin-top: 4rem;
+  font-size: 1.6rem;
+}
+
+.sets-grid {
+  margin: 8rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+}
+
+
+.sets-grid-item {
+  margin: auto;
+  width: 20rem;
+  height: 15rem;
+  border-radius: 1.5rem;
+  opacity: .8;
+}
+
+.sets-grid-item:hover {
+  transition: all .4s ease-in-out;
+  transform: scale(1.05);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.sets-grid-item:nth-of-type(1) {
+  background: url("img/set1.jpg") top no-repeat;
+  background-size: cover;
+}
+
+.sets-grid-item:nth-of-type(2) {
+  background: url("img/set2.jpg") top no-repeat;
+  background-size: cover;
+}
+
+.sets-grid-item:nth-of-type(3) {
+  background: url("img/set3.jpg") top no-repeat;
+  background-size: cover;
+}
+
+.sets-grid-item:nth-of-type(4) {
+  background: url("img/set4.jpg") top no-repeat;
+  background-size: cover;
+}
+
+.sets-grid-item:nth-of-type(5) {
+  background: url("img/set5.jpg") top no-repeat;
+  background-size: cover;
+}
+
+.sets-grid-item:nth-of-type(6) {
+  background: url("img/set6.jpg") top no-repeat;
+  background-size: cover;
+}
+
+.sets-grid-item:nth-of-type(7) {
+  background: url("img/set7.jpg") top no-repeat;
+  background-size: cover;
+}
+
+.sets-grid-item:nth-of-type(8) {
+  background: url("img/set8.jpg") left no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES  */
+
+/* reset the sets-grid-item opacity !!!! */
+/* do it only on desktop devices !!!! */
+
+/* Fix the bottom skew with media queries !!!  */
