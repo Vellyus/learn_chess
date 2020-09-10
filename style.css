@@ -137,18 +137,20 @@ header {
 .logo {
   width: 12rem;
   position: absolute;
-  bottom: 16rem;
+  top: -10rem;
   left: 50%;
   transform: translateX(-50%);
   background: #1E3A66;
   border: 4px solid #FDF6EA;
   border-radius: 50%;
+  z-index: 1;
 }
 
 /* ABOUT */
 
 #about {
   color: #1E3A66;
+  position: relative;
 }
 
 .about-grid {
