@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learn Chess</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
 </head>
 
 <body>
@@ -31,7 +32,7 @@
       <div class="container">
         <div class="flex-wrapper">
           <h1>Learn Chess</h1>
-          <a class="btn join-btn" href="#">Join now!</a>
+          <a class="btn join-btn" href="#signUp">Join now!</a>
         </div>
       </div>
     </section>
@@ -98,13 +99,142 @@
       </div>
     </section>
 
-    <section>
+    <section id="signUp">
       <div class="container">
+
+        <form action="index.html" method="post">
+
+          <h2>Sign Up!</h2>
+
+          <fieldset id="your-information">
+            <legend>Your Information</legend>
+
+            <div id="your-information-grid">
+              <div class="input-wrapper">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+              </div>
+
+            </div>
+          </fieldset>
+
+          <fieldset id="your-privacy">
+            <legend>Your Privacy</legend>
+            <input type="checkbox" id="consent_temrs" name="consent_temrs" value="consent_temrs"> <label
+              for="consent-terms">I consent to the <span class="consent">Terms of Service</span>.
+            </label>
+            <br>
+            <input type="checkbox" id="consent_data_policy" name="consent_data_policy" value="consent_data_policy">
+            <label for="consent_data_policy-terms">I consent to the <span class="consent">Data Privacy
+                Policy</span>.</label>
+
+          </fieldset>
+
+          <fieldset id="payment-information">
+            <legend>Payment Information</legend>
+
+            <div id="payment-information-grid">
+              <div class="input-wrapper card_number">
+                <label for="card_number">Card Number:</label>
+                <input type="number" id="card_number" name="card_number">
+              </div>
+
+              <div class="input-wrapper postal_zip">
+                <label for="postal_zip">Postal/Zip:</label>
+                <input type="number" id="postal_zip" name="postal_zip">
+              </div>
+
+              <div class="input-wrapper cvv">
+                <label for="cvv">CVV:</label>
+                <input type="number" id="cvv" name="cvv">
+              </div>
+
+
+              <div class="select-flex-wrapper card_date">
+                <div class="select-container">
+                  <label for="month">Month:</label>
+                  <select name="month" id="month">
+                    <option value="01_january">01 January</option>
+                    <option value="02_february">02 February</option>
+                    <option value="03_march">03 March</option>
+                    <option value="04_april">04 April</option>
+                    <option value="05_may">05 May</option>
+                    <option value="06_june">06 June</option>
+                    <option value="07_jule">07 Jule</option>
+                    <option value="08_august">08 August</option>
+                    <option value="09_september">09 September</option>
+                    <option value="10_oktober">10 Oktober</option>
+                    <option value="11_november">11 November</option>
+                    <option value="12_december">12 December</option>
+                  </select>
+                </div>
+
+                <div class="select-container">
+                  <label for="year">Year:</label>
+                  <select name="year" id="year">
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                    <option value="2034">2034</option>
+                    <option value="2035">2035</option>
+                    <option value="2036">2036</option>
+                    <option value="2037">2037</option>
+                    <option value="2038">2038</option>
+                    <option value="2039">2039</option>
+                    <option value="2040">2040</option>
+                  </select>
+                </div>
+
+              </div>
+
+          </fieldset>
+
+          <button type="submit">Sign Up!</button>
+
+        </form>
 
       </div>
     </section>
 
   </main>
+
+  <footer>
+    <div class="container">
+      <div class="media_icons">
+        <i class="icon ion-logo-facebook"></i>
+        <i class="icon ion-logo-youtube"></i>
+        <i class="icon ion-logo-instagram"></i>
+        <i class="icon ion-logo-twitter"></i>
+
+      </div>
+    </div>
+    <p class="copyright">2020 @Learn Chess | All rights reserved.</p>
+  </footer>
 
 </body>
 

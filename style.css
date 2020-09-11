@@ -61,12 +61,35 @@ h1 {
   font-size: 4.5rem;
 }
 
+button {
+  padding: .8rem 3rem;
+  background: var(--secondary-color-light);
+  color: var(--primary-color-dark);
+  border-radius: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  border: none;
+}
+
+button:hover {
+  color: var(--secondary-color-light);
+  transition: .4s ease-in-out;
+  background-color: var(--secondary-color-dark);
+  color: var(--primary-color-light);
+  transform: scale(1.03);
+}
+
+footer {
+  background: var(--primary-color-dark);
+}
+
 /* REUSABLE COMPONENTS */
 .btn {
   display: inline-block;
   padding: .8rem 3rem;
   background: var(--secondary-color-light);
-  color: #1E3A66;
+  color: var(--primary-color-dark);
   border-radius: 1.5rem;
 }
 
@@ -283,8 +306,299 @@ header {
   background-size: cover;
 }
 
+/* SIGN UP! */
+
+#signUp {
+  color: var(--primary-color-dark);
+}
+
+#signUp h2 {
+  margin-bottom: 2rem;
+}
+
+form {
+  max-width: 48rem;
+  margin: auto;
+}
+
+fieldset {
+  padding: 4rem 0;
+  position: relative;
+  border: none;
+}
+
+legend {
+  display: block;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input,
+select {
+  border: 1px solid var(--primary-color-dark);
+  border-radius: .5rem;
+  color: var(--primary-color-dark);
+}
+
+/* your information  */
+#your-information-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+}
+
+#your-information input,
+#your-information label {
+  display: block;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+#your-information input {
+  padding: .5rem 1rem;
+}
+
+#your-information label {
+  text-align: left;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+/* your privacy  */
+#your-privacy {
+  text-align: left;
+}
+
+#your-privacy input {
+  transform: scale(1.1);
+  margin: 1rem;
+  vertical-align: middle;
+}
+
+#your-privacy label {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.consent {
+  color: var(--secondary-color-light);
+  cursor: pointer;
+}
+
+/* payment information  */
+.card_number {
+  grid-area: "card_number";
+}
+
+.postal_zip {
+  grid-area: "postal_zip";
+}
+
+.cvv {
+  grid-area: "cvv";
+}
+
+.card_date {
+  grid-area: "card_date";
+}
 
 
+
+#payment-information-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-areas:
+    "card_number"
+    "postal_zip cvv"
+    "card-date";
+}
+
+
+#payment-information input,
+#payment-information label {
+  display: block;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+#payment-information input {
+  padding: .5rem 1rem;
+}
+
+#payment-information label {
+  text-align: left;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+#payment-information label:nth-of-type(4),
+#payment-information label:nth-of-type(5) {
+  display: block;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+#payment-information select {
+  display: block;
+}
+
+.select-flex-wrapper {
+  display: flex;
+}
+
+.select-container {
+  width: 50%;
+  margin-right: 2rem;
+}
+
+select {
+  height: 3rem;
+}
+
+
+/* FOOTER */
+
+.icon {
+  display: inline-block;
+  font-size: 3rem;
+  color: var(--primary-color-light);
+  margin: 3rem 1.5rem;
+  cursor: pointer;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  padding-bottom: 3rem;
+}
+
+
+
+
+/* TREEHOUSE STYLES */
+
+
+/* *,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+} */
 
 
 
