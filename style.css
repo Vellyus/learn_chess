@@ -387,6 +387,10 @@ select {
   cursor: pointer;
 }
 
+.consent:hover {
+  text-decoration: underline;
+}
+
 /* payment information  */
 .card_number {
   grid-area: "card_number";
