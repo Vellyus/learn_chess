@@ -13,6 +13,7 @@ html {
   --secondary-color-dark: #c81e80;
 }
 
+
 /* GLOBAL RULES */
 h1,
 h2,
@@ -86,7 +87,6 @@ h3 {
   text-transform: uppercase;
 }
 
-
 button {
   padding: .8rem 3rem;
   background: var(--secondary-color-light);
@@ -112,10 +112,10 @@ label {
   font-size: 1.6rem;
 }
 
-
 footer {
   background: var(--primary-color-dark);
 }
+
 
 /* REUSABLE COMPONENTS */
 .btn {
@@ -134,8 +134,6 @@ footer {
 }
 
 
-
-
 /* HEADER */
 header {
   width: 100%;
@@ -147,7 +145,6 @@ header {
 }
 
 .nav-list {
-  /* max-width: 80%; */
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -162,9 +159,9 @@ header {
   cursor: pointer;
 }
 
+
 /* HERO */
 .hero {
-  /* background: linear-gradient(rgba(40, 40, 40, .5) 0%, rgba(0, 0, 0, .8) 100%), url("img/bg1.jpg") center no-repeat; */
   background: linear-gradient(135deg, rgba(40, 68, 112, .5) 0%, rgba(30, 58, 102, .5) 100%), url("img/bg1.jpg") center no-repeat;
 
   background-size: cover;
@@ -201,8 +198,8 @@ header {
   z-index: 1;
 }
 
-/* ABOUT */
 
+/* ABOUT */
 #about {
   color: #1E3A66;
   position: relative;
@@ -217,7 +214,6 @@ header {
 }
 
 .about-grid-item {
-  /* background: linear-gradient(rgba(40, 40, 40, .8) 0%, rgba(0, 0, 0, .8) 100%); */
   background: linear-gradient(135deg, rgba(40, 68, 112, .9) 0%, rgba(30, 58, 102, .9) 100%);
   height: 18rem;
   border-radius: 1.5rem;
@@ -245,11 +241,9 @@ header {
   max-width: 16rem;
 }
 
-/* SETS */
 
+/* SETS */
 #sets {
-  /* height: 100vh; */
-  /* background: linear-gradient(rgba(40, 40, 40, .5) 0%, rgba(0, 0, 0, .8) 100%), url("img/bg2.jpg") center no-repeat; */
   background: linear-gradient(135deg, rgba(40, 68, 112, .5) 0%, rgba(30, 58, 102, .5) 100%), url("img/bg2.jpg") center no-repeat;
   background-size: cover;
   background-position-y: top;
@@ -329,8 +323,8 @@ header {
   background-size: cover;
 }
 
-/* SIGN UP! */
 
+/* SIGN UP! */
 #signUp {
   color: var(--primary-color-dark);
 }
@@ -489,8 +483,6 @@ select {
 
 
 /* MEDIA QUERIES  */
-
-
 @media (min-width: 365px) {
   #sets {
     clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
@@ -675,9 +667,4 @@ select {
         top: -10rem;
       }
 
-
     }
-
-
-
-    /* Fix the bottom skew with media queries !!!  */
