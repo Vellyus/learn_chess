@@ -72,8 +72,20 @@ img {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 5rem;
 }
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
 
 button {
   padding: .8rem 3rem;
@@ -84,6 +96,7 @@ button {
   text-transform: uppercase;
   letter-spacing: .3rem;
   border: none;
+  font-size: 1.3rem;
 }
 
 button:hover {
@@ -93,6 +106,12 @@ button:hover {
   color: var(--primary-color-light);
   transform: scale(1.03);
 }
+
+input,
+label {
+  font-size: 1.6rem;
+}
+
 
 footer {
   background: var(--primary-color-dark);
@@ -114,15 +133,6 @@ footer {
   transform: scale(1.03);
 }
 
-h3 {
-  font-size: 1.2rem;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 3rem;
-}
 
 
 
@@ -222,18 +232,17 @@ header {
 }
 
 .about-grid-item h4 {
-  margin-top: 4rem;
-  font-size: 1.8rem;
+  margin-top: 3rem;
+  font-size: 2.2rem;
   font-weight: normal;
 }
 
 .about-grid-item p {
   display: inline-block;
   margin-top: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 0 2rem;
   max-width: 16rem;
-  line-height: 1.6rem;
 }
 
 /* SETS */
@@ -242,7 +251,6 @@ header {
   /* height: 100vh; */
   /* background: linear-gradient(rgba(40, 40, 40, .5) 0%, rgba(0, 0, 0, .8) 100%), url("img/bg2.jpg") center no-repeat; */
   background: linear-gradient(135deg, rgba(40, 68, 112, .5) 0%, rgba(30, 58, 102, .5) 100%), url("img/bg2.jpg") center no-repeat;
-
   background-size: cover;
   background-position-y: top;
   clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
@@ -367,7 +375,6 @@ select {
 #your-information input,
 #your-information label {
   display: block;
-  font-size: 1.4rem;
   width: 100%;
 }
 
@@ -393,7 +400,6 @@ select {
 }
 
 #your-privacy label {
-  font-size: 1.4rem;
   vertical-align: middle;
 }
 
@@ -436,7 +442,6 @@ select {
 #payment-information input,
 #payment-information label {
   display: block;
-  font-size: 1.4rem;
   width: 100%;
 }
 
@@ -448,13 +453,6 @@ select {
   text-align: left;
   margin-top: 1.5rem;
   margin-bottom: .5rem;
-}
-
-#payment-information label:nth-of-type(4),
-#payment-information label:nth-of-type(5) {
-  display: block;
-  font-size: 1.2rem;
-  width: 100%;
 }
 
 #payment-information select {
@@ -478,18 +476,208 @@ select {
 /* FOOTER */
 .icon {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--primary-color-light);
   margin: 3rem 1.5rem;
   cursor: pointer;
 }
 
 .copyright {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding-bottom: 3rem;
 }
 
 
 /* MEDIA QUERIES  */
 
-/* Fix the bottom skew with media queries !!!  */
+
+@media (min-width: 365px) {
+  #sets {
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: -5rem;
+  }
+
+}
+
+@media (min-width: 400px) {
+  #sets {
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: -5rem;
+  }
+
+}
+
+@media (min-width: 650px) {
+  #sets {
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: -5rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  header {
+    padding: 0 4rem;
+  }
+
+  .nav-list {
+    padding: 2rem 4rem;
+  }
+
+  .nav-list-item {
+    font-size: 1.4rem;
+  }
+
+  h1 {
+    font-size: 6.5rem;
+  }
+
+  .join-btn {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .about-grid-item h4 {
+    font-size: 2.4rem;
+    margin-top: 2rem;
+  }
+
+  .about-grid-item p {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+
+  .sets-btn {
+    font-size: 1.3rem;
+  }
+
+  legend {
+    font-size: 2.2rem;
+  }
+
+  input,
+  label {
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 1.4rem;
+  }
+
+
+  .icon {
+    font-size: 2.5rem;
+  }
+
+  .copyright {
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    width: 10rem;
+    top: -10rem;
+  }
+
+
+  @media (min-width: 860px) {
+    #sets {
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      padding-bottom: -5rem;
+    }
+
+  }
+
+
+  @media (min-width: 1080px) {
+    #sets {
+      clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 100%);
+      padding-bottom: -5rem;
+    }
+
+  }
+
+  @media (min-width: 1024px) {
+
+    .nav-list-item {
+      font-size: 1.6rem;
+    }
+
+    h1 {
+      font-size: 9rem;
+    }
+
+    .join-btn {
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+    }
+
+    .about-grid-item h4 {
+      font-size: 2.8rem;
+      margin-top: .5rem;
+    }
+
+    .about-grid-item p {
+      font-size: 1.8rem;
+      padding: 0 .5rem;
+    }
+
+    .sets-btn {
+      font-size: 1.7rem;
+    }
+
+    legend {
+      font-size: 2.7rem;
+    }
+
+    input,
+    label {
+      font-size: 1.8rem;
+    }
+
+    button {
+      font-size: 1.7rem;
+    }
+
+
+    .icon {
+      font-size: 3rem;
+    }
+
+    .copyright {
+      font-size: 1.6rem;
+    }
+
+    .logo {
+      width: 12rem;
+      top: -12rem;
+    }
+
+    @media (min-width: 1400px) {
+      .logo {
+        width: 12rem;
+        top: -10rem;
+      }
+
+
+    }
+
+
+
+    /* Fix the bottom skew with media queries !!!  */
