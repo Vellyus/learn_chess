@@ -239,6 +239,7 @@ header {
   font-size: 1.4rem;
   padding: 0 2rem;
   max-width: 16rem;
+  line-height: 1.9rem;
 }
 
 
@@ -527,6 +528,7 @@ select {
 
   .join-btn {
     font-size: 1.4rem;
+    border-radius: 4rem;
   }
 
   h2 {
@@ -546,10 +548,12 @@ select {
   .about-grid-item p {
     font-size: 1.6rem;
     padding: 0 1rem;
+    line-height: 2.1rem;
   }
 
   .sets-btn {
     font-size: 1.3rem;
+    border-radius: 4rem;
   }
 
   legend {
@@ -578,93 +582,97 @@ select {
     width: 10rem;
     top: -10rem;
   }
+}
 
 
-  @media (min-width: 860px) {
-    #sets {
-      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-      padding-bottom: -5rem;
-    }
+@media (min-width: 860px) {
+  #sets {
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: -5rem;
+  }
 
+}
+
+
+@media (min-width: 1080px) {
+  #sets {
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 100%);
+    padding-bottom: -5rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .nav-list-item {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 9rem;
+  }
+
+  .join-btn {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  .about-grid-item h4 {
+    font-size: 2.8rem;
+    margin-top: .5rem;
+  }
+
+  .about-grid-item p {
+    font-size: 1.8rem;
+    padding: 0 .5rem;
+    line-height: 2.3rem;
+  }
+
+  .sets-btn {
+    font-size: 1.7rem;
+  }
+
+  legend {
+    font-size: 2.7rem;
+  }
+
+  input,
+  label {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 1.7rem;
+    border-radius: 4rem;
   }
 
 
-  @media (min-width: 1080px) {
-    #sets {
-      clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 100%);
-      padding-bottom: -5rem;
-    }
-
+  .icon {
+    font-size: 3rem;
   }
 
-  @media (min-width: 1024px) {
+  .copyright {
+    font-size: 1.6rem;
+  }
 
-    .nav-list-item {
-      font-size: 1.6rem;
-    }
+  .logo {
+    width: 12rem;
+    top: -12rem;
+  }
+}
 
-    h1 {
-      font-size: 9rem;
-    }
+@media (min-width: 1400px) {
+  .logo {
+    width: 12rem;
+    top: -10rem;
+  }
 
-    .join-btn {
-      font-size: 1.8rem;
-    }
-
-    h2 {
-      font-size: 6rem;
-      line-height: 6rem;
-    }
-
-    h3 {
-      font-size: 2.4rem;
-    }
-
-    .about-grid-item h4 {
-      font-size: 2.8rem;
-      margin-top: .5rem;
-    }
-
-    .about-grid-item p {
-      font-size: 1.8rem;
-      padding: 0 .5rem;
-    }
-
-    .sets-btn {
-      font-size: 1.7rem;
-    }
-
-    legend {
-      font-size: 2.7rem;
-    }
-
-    input,
-    label {
-      font-size: 1.8rem;
-    }
-
-    button {
-      font-size: 1.7rem;
-    }
-
-
-    .icon {
-      font-size: 3rem;
-    }
-
-    .copyright {
-      font-size: 1.6rem;
-    }
-
-    .logo {
-      width: 12rem;
-      top: -12rem;
-    }
-
-    @media (min-width: 1400px) {
-      .logo {
-        width: 12rem;
-        top: -10rem;
-      }
-
-    }
+}
